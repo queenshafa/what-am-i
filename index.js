@@ -1,8 +1,8 @@
-// fetch("https://api.counterapi.dev/v2/what-am-i-visits/what-am-i-visit/up")
-//   .then((res) => res.json())
-//   .then((data) => {
-//     document.getElementById("view-count").textContent = data.data.up_count;
-//   });
+fetch("https://api.counterapi.dev/v2/what-am-i-visits/what-am-i-visit/up")
+  .then((res) => res.json())
+  .then((data) => {
+    document.getElementById("view-count").textContent = data.data.up_count;
+  });
 
 let yearInput = document.getElementById("yearInput");
 const checkBtn = document.getElementById("checkBtn");
