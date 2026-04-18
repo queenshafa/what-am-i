@@ -1,17 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const counter = new Counter({ workspace: "my-website" });
-
-  // Increment the view count when the page loads
-  counter
-    .up("page-views")
-    .then((result) => {
-      document.getElementById("view-count").textContent = result.value;
-    })
-    .catch((error) => {
-      console.error("Error tracking page view:", error);
-      document.getElementById("view-count").textContent = "Error loading count";
-    });
-});
+// fetch("https://api.counterapi.dev/v2/what-am-i-visits/what-am-i-visit/up")
+//   .then((res) => res.json())
+//   .then((data) => {
+//     document.getElementById("view-count").textContent = data.data.up_count;
+//   });
 
 let yearInput = document.getElementById("yearInput");
 const checkBtn = document.getElementById("checkBtn");
@@ -22,7 +13,7 @@ const userDesc = document.getElementById("cardDesc");
 function checkAge() {
   const rawValue = yearInput.value;
   if (rawValue === "") {
-    userImage.src = "assets/unc.png";
+    userImage.src = "assets/no-value.png";
     userTitle.textContent = "hey!";
     userDesc.textContent = "put the year first, silly!";
     return;

@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
-    "counterapi": "^2.1.2",
     "tailwindcss": "^4.2.2"
   }
 }
