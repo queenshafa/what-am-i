@@ -1,0 +1,24 @@
+{
+  "name": "what-am-i",
+  "version": "1.0.0",
+  "description": "Check your age group by your birth year!",
+  "homepage": "https://github.com/queenshafa/what-am-i#readme",
+  "bugs": {
+    "url": "https://github.com/queenshafa/what-am-i/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queenshafa/what-am-i.git"
+  },
+  "license": "ISC",
+  "author": "queenshafarania",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "tailwindcss": "^4.2.2"
+  }
+}

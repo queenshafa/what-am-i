@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-helvetica: Helvetica, Arial, "HelveticaNeue", "Helvetica Neue Light",
+    "HelveticaNeue-Light", "Lucida Grande", sans-serif;
+  --color-primary: #d7ff82;
+}
+
+@layer base {
+  .grid-bg {
+    background-size: 40px 40px;
+    background-image: radial-gradient(
+      circle,
+      #707070 1px,
+      rgba(0, 0, 0, 0) 1px
+    );
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
